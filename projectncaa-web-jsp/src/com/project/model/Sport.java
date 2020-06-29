@@ -64,7 +64,7 @@ public class Sport {
 		
 		@Override
 		public String toString(){
-			return sportId + "," + name + "," + schoolId + "," + seasonId + "," + schoolId; 
+			return sportId + "," + name + "," + schoolId + "," + seasonId; 
 			
 		}
 

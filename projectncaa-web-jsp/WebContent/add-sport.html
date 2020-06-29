@@ -1,12 +1,50 @@
 <!DOCTYPE html>
 <html>
-   <body>
-      <form action="projectncaa-web-jsp/AddSport">
-       Sport Id  <input type="text"  name="sportid"/><br/><br/>
-       Sport Name  <input type="text"  name="name"/><br/><br/>
-       School Id  <input type="text"  name="schoolid"/><br/><br/>
-       Season Id  <input type="text"  name="seasonid"/><br/><br/>
-       <input type="submit" value="Add Sport"><br/><br/>
+<head>
+<title>Add Sport</title>
+<link rel="stylesheet"  type="text/css" href="styles.css"/>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+    <h1>
+        Create New Sport
+    </h1>
+
+    <form action="/projectncaa-web-jsp/AddSport">
+        <div class="form-group">
+          <label for="sportid">Sport ID </label>
+          <input type="text" class="form-control" name="sportid" placeholder="Enter ID here">
+        </div>
+        <div class="form-group">
+          <label for="name">Sport Name</label>
+          <input type="text" class="form-control" name="name" placeholder="Enter name here">
+
+        </div>
+
+        <div class="form-group">
+            <label for="schoolid">School ID</label>
+            <input type="text" class="form-control" name="schoolid" placeholder="Enter school ID here">
+          </div>
+
+        <div class="form-group">
+            <label for="seasonid">Season ID</label>
+            <input type="text" class="form-control" name="seasonid" placeholder="Enter season ID here">
+          </div>
+
+          <input type="submit" value="Submit">
       </form>
-   </body>
-</html> 
+      
+
+
+   
+ <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
+		
+	
+			
