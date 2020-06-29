@@ -100,13 +100,12 @@ public boolean saveSport(Sport sport) {
 		Statement statement = connection.createStatement();
 		System.out.println("Statement created!");
 		// Fetch the results by executing the query
-		System.out.println("Creating the sport List: ");
-		ResultSet resultSet = statement.executeQuery("insert into sport values (" + sport.getSportId() + ", '" + sport.getName()
-				+ "', " + sport.getSchoolId() + "," + sport.getSeasonId());
+		System.out.println("Creating the sport ");
+		statement.execute("insert into sport values (" + sport.getSportId() + ", '" + sport.getName()
+				+ "', " + sport.getSchoolId() + "," + sport.getSeasonId() + ");");
 		
 	
 		
-		resultSet.close();
 		statement.close();
 		
 		System.out.println("You saved this sport!!");
