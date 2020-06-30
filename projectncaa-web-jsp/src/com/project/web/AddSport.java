@@ -18,6 +18,7 @@ import com.project.service.SportService;
 public class AddSport extends HttpServlet {
 	@Override
 	protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		System.out.println("Got into the servlet");
 		Sport sport = new Sport();
 		//SportRepo sportRepo = new SportRepo();
 		System.out.println(req.getServletPath());

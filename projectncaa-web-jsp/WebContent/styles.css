@@ -1,6 +1,6 @@
 
 body{
-    background-image: url(/img/ncaa.jpg);
+    background-image: url("/projectncaa-web-jsp/img/ncaa.jpg");
     background-repeat: repeat;
 }
 
@@ -21,4 +21,15 @@ h2{
 
 .form-control {
     align-content: center;
+}
+
+.dropdown{
+
+    padding: 300px 475px;
+   
+    max-width: 100%;
+}
+
+.tbody-light{
+    background-color: whitesmoke;
 }

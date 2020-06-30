@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Add Sport</title>
+<title>Home</title>
 <link rel="stylesheet"  type="text/css" href="styles.css"/>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
@@ -9,36 +9,19 @@
 
 </head>
 <body>
-    <h1>
-        Create New Sport
-    </h1>
 
-    <form action="/projectncaa-web-jsp/AddSport">
-        <div class="form-group">
-          <label for="sportid">Sport ID </label>
-          <input type="text" class="form-control" name="sportid" placeholder="Enter ID here">
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Choose An Action...
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="/projectncaa-web-jsp/DisplaySport">View all Sports</a>
+
+          <a class="dropdown-item" href="add-sport.html">Add a Sport</a>
+          <a class="dropdown-item" href="#">Update Sports</a>
+          <a class="dropdown-item" href="#">Delete Sports</a>
         </div>
-        <div class="form-group">
-          <label for="name">Sport Name</label>
-          <input type="text" class="form-control" name="name" placeholder="Enter name here">
-
-        </div>
-
-        <div class="form-group">
-            <label for="schoolid">School ID</label>
-            <input type="text" class="form-control" name="schoolid" placeholder="Enter school ID here">
-          </div>
-
-        <div class="form-group">
-            <label for="seasonid">Season ID</label>
-            <input type="text" class="form-control" name="seasonid" placeholder="Enter season ID here">
-          </div>
-
-          <input type="submit" value="Submit">
-      </form>
-      
-	<h3>  <a href="newindex.html">Back to Homepage</a></h3>
-
+      </div>
    
  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -47,4 +30,3 @@
 </html>
 		
 	
-			
