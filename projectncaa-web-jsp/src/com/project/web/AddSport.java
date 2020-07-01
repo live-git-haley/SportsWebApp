@@ -21,7 +21,7 @@ public class AddSport extends HttpServlet {
 		System.out.println("Got into the servlet");
 		Sport sport = new Sport();
 		//SportRepo sportRepo = new SportRepo();
-		System.out.println(req.getServletPath());
+		//System.out.println(req.getServletPath());
 		String sportName = req.getParameter("name");
 		System.out.println(sportName);
 		int sportid = Integer.parseInt(req.getParameter("sportid"));

@@ -29,14 +29,14 @@ public Sport getFirstSport() {
 		System.out.println("Statement created!");
 		// Fetch the results by executing the query
 		System.out.println("Created the sport: ");
-		ResultSet resultSet = statement.executeQuery("select * from sport;");
+		ResultSet resultSet = statement.executeQuery("select * from sport where sportid = 4;");
 		
 	
 		 while (resultSet.next()) { 
 			sport.setSportId(resultSet.getInt("sportid"));
 			sport.setName(resultSet.getString("name")); 
 			sport.setSchoolId(resultSet.getInt("schoolid"));
-			sport.setSeasonId(resultSet.getInt("sportid"));
+			sport.setSeasonId(resultSet.getInt("seasonid"));
 
 		 }
 		resultSet.close();
@@ -105,7 +105,6 @@ public boolean saveSport(Sport sport) {
 				+ "', " + sport.getSchoolId() + "," + sport.getSeasonId() + ");");
 		
 	
-		
 		statement.close();
 		
 		System.out.println("You saved this sport!!");
@@ -117,6 +116,33 @@ public boolean saveSport(Sport sport) {
 	return false;
 	
 }
+
+public void deleteSport(int sportid) {
+	
+	try
+	{
+		Class.forName("com.mysql.jdbc.Driver");
+		Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/project", "root", "haleykobe2");
+		System.out.println("Connected!");
+		
+		Statement statement = connection.createStatement();
+		System.out.println("Statement created!");
+		// Fetch the results by executing the query
+		System.out.println("deleting the sport");
+		int i = statement.executeUpdate("delete from sport where sportid = " + sportid + ";");
+	
+
+		statement.close();
+		System.out.println("You deleted the sport using the repo layer.");
+
+}
+	catch(SQLException  | ClassNotFoundException e ) {
+		System.out.println(e);
+	}
+	
+	
+}
+
 	
 	
 	

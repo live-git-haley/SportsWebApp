@@ -36,6 +36,12 @@ public Sport updateSport() {
 //	return product;
 	return saved;
 }
+	
+	public void deleteSport(int sportid) {
+		SportRepo sportRepo = new SportRepo();
+		sportRepo.deleteSport(sportid);
+		System.out.println("You used the service layer");
+	}
 
 
 }
