@@ -1,19 +1,39 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+
+
+<%@ page import="com.project.model.Sport"%>
+<%@ page import="java.util.*"%>
+
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Deleted Sport</title>
+<title>Found the Sport</title>
 <link rel="stylesheet"  type="text/css" href="styles.css"/>
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-
+<style>
+	body{
+	color: white;
+	}
+</style>
 </head>
-<body>
-<h1> You deleted the sport! </h1>
 
-<h3>  <a href="newindex.html">Back to Homepage</a></h3>
+
+<body>
+
+	<%
+	ArrayList<Sport> listSport = (ArrayList<Sport>)request.getAttribute("foundlist");
+
+	for (Sport sport: listSport){
+		out.println(sport.getName());
+		%>
+		<br>
+		<%}
+	%>
 
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

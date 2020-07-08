@@ -14,8 +14,8 @@ import com.project.repo.SportRepo;
 import com.project.service.SportService;
 
 
-@WebServlet("/AddSport")
-public class AddSport extends HttpServlet {
+@WebServlet("/AddSchool")
+public class AddSchool extends HttpServlet {
 	@Override
 	protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		System.out.println("Got into the servlet");
@@ -24,7 +24,7 @@ public class AddSport extends HttpServlet {
 		//System.out.println(req.getServletPath());
 		String sportName = req.getParameter("name");
 		System.out.println(sportName);
-		int schoolid = Integer.parseInt(req.getParameter("schoolid"));
+		int schoolid = Integer.parseInt(req.getParameter("inputGroupSelect01"));
 		int seasonid = Integer.parseInt(req.getParameter("seasonid"));
 		
 		sport.setName(sportName);
@@ -55,5 +55,4 @@ public class AddSport extends HttpServlet {
 		}
 
 	}
-
 

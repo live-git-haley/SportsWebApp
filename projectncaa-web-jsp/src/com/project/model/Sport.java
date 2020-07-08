@@ -14,9 +14,8 @@ public class Sport {
 		}
 		
 		
-		public Sport(int sportId, String name, int seasonId, int schoolId) {
+		public Sport (String name, int seasonId, int schoolId) {
 			super();
-			this.sportId = sportId;
 			this.name = name;
 			this.seasonId = seasonId;
 			this.schoolId = schoolId;

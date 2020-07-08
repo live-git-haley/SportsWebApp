@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Add Sport</title>
+<title>Add School</title>
 <link rel="stylesheet"  type="text/css" href="styles.css"/>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
@@ -10,31 +10,33 @@
 </head>
 <body>
     <h1>
-        Create New Sport
+        Add your school to the database
     </h1>
 
-    <form action="/projectncaa-web-jsp/AddSport">
-        
+    <form>
         <div class="form-group">
-          <label for="name">Sport Name</label>
-          <input type="text" class="form-control" name="name" placeholder="Enter name here">
+          <label for="sportid">School Name </label>
+          <input type="text" class="form-control" id="name" placeholder="Enter name here">
+        </div>
+        <div class="form-group">
+          <label for="name">City</label>
+          <input type="text" class="form-control" id="city" placeholder="Enter city here">
 
         </div>
 
         <div class="form-group">
-            <label for="schoolid">School ID</label>
-            <input type="text" class="form-control" name="schoolid" placeholder="Enter school ID here">
+            <label for="schoolid">State</label>
+            <input type="text" class="form-control" id="state" placeholder="Enter state">
           </div>
 
-        <div class="form-group">
-            <label for="seasonid">Season ID</label>
-            <input type="text" class="form-control" name="seasonid" placeholder="Enter season ID here">
-          </div>
-
-          <input type="submit" value="Submit">
+    
+          
       </form>
+
+      <a class="btn btn-success" href="addedSchool.html" role="button">Add This School</a>
+
       
-	<h3>  <a href="newindex.html">Back to Homepage</a></h3>
+
 
    
  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
